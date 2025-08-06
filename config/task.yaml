@@ -1,0 +1,14 @@
+#Este agente performará uma única tarefa, que é responder uma pergunta 
+responder_pergunta_compliance:
+  description: > #Descrição da tarefa
+    Responder perguntas relacionadas à conformidade com base nas regulamentaçõs da ANVISA, BPF e GMP nos arquivos PDFs.
+    Fornecer a seção mais relevante das regulamentações e resumí-la de forma clara.
+
+    Pergunta:
+    (pergunta)
+
+  expected_output: > #Saída esperada
+    Uma resposta precisa e bem estruturada, fundamentada nas regulamentações mais relevantes sobre conformidade
+    Se aplicável, citar a seção específica das BPF, RDC nº 301 ou RDC nº 658.
+
+  agent: especialista_compliance #Agente que realizará a tarefa
